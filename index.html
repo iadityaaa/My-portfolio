@@ -3,56 +3,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
 </head>
 <body>
     <!-- navbar -->
    <nav class="navbar">
     <ul class="link-group">
-        <li class="link active"><a href="#">home</a></li>
-        <li class="link"><a href="#">projects</a></li>
-        <li class="link"><a href="#">about</a></li>
-        <li class="link"><a href="#">contact</a></li>
+        <li class="link active"><a href="#home_id">Home</a></li>
+        <li class="link"><a href="#proj_id">Projects</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Contact</a></li>
     </ul>
    </nav>
 
    <!-- home section -->
-   <section class="home-section active">
-       <h1 class="hero-heading">hello, i am <br> KUMAR ADITYA</h1>
-       <img src="img/Aditya.jpg" class="home-img" alt="">
+   <section class="home-section active" id="home_id">
+    <div class="hero-heading">
+        <h1>
+            KUMAR ADITYA
+        </h1>
+        <h2>| Competitive Programmer |
+            <br>| MERN Developer |
+            <br>ECE 24' undergrad 
+            <br> @ BIT MESRA
+        </h2>
+        <p>I am a 3rd year undergraduate at Birla Institute of Technology , Mesra with major in electronics and communications engineering .
+            <br> I have been an active explorer in my first couple years of college, exploring various domains and artforms.
+            <br> Recently i started getting my hands on web development and competitive programming and since then i am trying to dive deeper and deeper into these.
+        </p>
+    </div>
+    <img src="img/Aditya.jpg" class="home-img" alt="">
    </section>
 
    <!-- project section -->
-    <section class="project-section">
-        <h1 class="project-heading">some of my projects</h1>
-        <div class="project-container">
-            <div class="project-card">
-                <img src="img/project-1.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+    <section class="project-section" id="proj_id">
+        <h1 class="project-heading">Some of my projects</h1>
+        <div class="projects">
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="img/ehsaas_web_ss.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title">project 01</h1>
+                        <p class="project-info">
+                            Website for "Ehsaas Dramatics Society"<br>
+                            A fully responsive and functional website which acts a virtual representative for the club. <br>
+                            Tools & technologies used: HTML,CSS,JS,BOOTSTRAP,React,MongoDB,Node.js <br>
+                            The website is aimed to smoothen the executive process for Ehsaas and to extend its reach.
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">github repo</button>
+                            <button class="project-btn live">see live</button>
+                        </div>
                     </div>
-                </div>
+                </div>  
             </div>
-            <div class="project-card">
-                <img src="img/project-1.png" class="project-img" alt="">
-                <div class="project-content">
-                    <h1 class="project-title">project 01</h1>
-                    <p class="project-info">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                    </p>
-                    <div class="project-btn-grp">
-                        <button class="project-btn github">github repo</button>
-                        <button class="project-btn live">see live</button>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="img/ps4_proj.png" class="project-img" alt="">
+                    <div class="project-content">
+                        <h1 class="project-title2">project 02</h1>
+                        <p class="project-info2">
+                            Website for "Ehsaas Dramatics Society"<br>
+                            A fully responsive and functional website which acts a virtual representative for the club. <br>
+                            Tools & technologies used: HTML,CSS,JS,BOOTSTRAP,React,MongoDB,Node.js <br>
+                            The website is aimed to smoothen the executive process for Ehsaas and to extend its reach.
+                        </p>
+                        <div class="project-btn-grp">
+                            <button class="project-btn github">github repo</button>
+                            <button class="project-btn live">see live</button>
+                        </div>
                     </div>
-                </div>
-            </div>    
+                </div>  
+            </div>
         </div>
     </section>
 
@@ -60,36 +83,45 @@
     <section class="about-section">
         <div class="about">
             <div class="about-img-container">
-                <img src="img/home.png" class="about-img" alt="">
-                <button class="download-cv-btn">downlaod cv</button>
+                <img src="img/resume_ss.png" class="about-img" alt="">
+                <button onclick="location.href ='www.drive.google.com/file/d/1p-t3Pae-Bji0GjLHtX1G_-ZHsAB27Lxr/view';" class="download-cv-btn">downlaod cv</button>
             </div>
-            <p class="about-info">Lorem ipsum.....</p>
+            <p class="about-info">I am a 3rd year undergraduate at Birla Institute of Technology , Mesra with major in electronics and communications engineering .I have been an active explorer in my first couple years of college, exploring various domains and artforms.
+                Recently i started getting my hands on web development and competitive programming and since then i am trying to dive deeper and deeper into these. I've made a couple of projects:
+                <br> <br>
+                Ehsaas Dramatics Society Website <br>
+                *A beautifully created MERN based website. <br>
+                *Login and Authentication for club members. <br>
+                *Developer mode available. <br> <br>
+                
+                My personal Portfolio Website  <br>
+                *Created using HTML,CSS,BOOTSTRAP and JAVASCRIPT.</p>
         </div>
         <!-- skills -->
         <div class="skill-section">
             <h1 class="heading">skills</h1>
             <div class="skills-container">
                 <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
+                    <img src="img/html_img.png" class="skill-img" alt="">
+                    <div class="skill-level">100%</div>
                     <h1 class="skill-name">HTML</h1>
                     <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
                 </div>
                 <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
+                    <img src="img/css_img.png" class="skill-img" alt="">
+                    <div class="skill-level">90%</div>
                     <h1 class="skill-name">HTML</h1>
                     <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
                 </div>
                 <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
+                    <img src="img/js_img.png" class="skill-img" alt="">
+                    <div class="skill-level">95%</div>
                     <h1 class="skill-name">HTML</h1>
                     <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
                 </div>
                 <div class="skill-card">
-                    <img src="img/html.png" class="skill-img" alt="">
-                    <div class="skill-level">98%</div>
+                    <img src="img/react_img.png" class="skill-img" alt="">
+                    <div class="skill-level">95%</div>
                     <h1 class="skill-name">HTML</h1>
                     <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
                 </div>
@@ -100,20 +132,26 @@
             <h1 class="heading">education and experience</h1>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">Class 10th boards (2017-2018)</h1>
+                    <p class="card-detail">School name: G.G.P.S CHAS 
+                     <br> Percentage: 96.4 %
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">Class 12th boards (2019-2010)</h1>
+                    <p class="card-detail">School name: G.G.P.S CHAS 
+                     <br> Percentage: 94.6 %
+                    </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">2000-2002</h1>
-                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    <h1 class="card-title">BTECH (2020-Present)</h1>
+                    <p class="card-detail"> Btech in Electronics and communication engineering.
+                        <br>cgpa:9.25
+                    </p>
                 </div>
             </div>
         </div>
@@ -129,7 +167,7 @@
                 </form>
                 <!-- map -->
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163742937!2d76.81306771991275!3d28.647279935262464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1639489002410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=BIT%20MESRA,%20Ranchi+(My%20Workplace)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </section>
 
@@ -153,6 +191,8 @@ links.forEach((link, i) => {
         }
     })
 })
+
+
     </script>
 </body>
 </html>
